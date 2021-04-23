@@ -9,79 +9,184 @@
 
     <title>reveal.js</title>
 
-    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
-    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
+    <link rel="stylesheet" href="assets/reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="assets/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="assets/reveal.js/dist/theme/serif.css" id="theme" />
 
     <!-- Theme used for syntax highlighted code -->
     <link
       rel="stylesheet"
-      href="reveal.js/plugin/highlight/monokai.css"
+      href="assets/reveal.js/plugin/highlight/monokai.css"
       id="highlight-theme"
     />
+
+    <style>
+      
+      .reveal section p {
+      display: inline-block;
+      font-size: 0.6em;
+      line-height: 1.0em;
+      vertical-align: top;
+    }
+    .reveal section ul {
+      display: inline-block;
+      font-size: 0.7em;
+      line-height: 1.2em;
+      vertical-align: top;
+    }
+
+    .container{
+      display: flex;
+      font-size: 0.85em;
+    }
+    .col{
+      flex: 1;
+    }
+  </style>
+
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section
+	<section data-markdown
+        data-background-color="white"
+                  >
+          <textarea data-template>
+          #### **Experimental investigation of precession driven flows in an ellipsoid**
+
+          F.Burmann and J. Noir
+          <br>
+          <small>
+		Institute of Geophysics, ETH Zurich, Zurich, Switzerland
+          </small>
+       	<br>
+
+          <div style="height: 0%; position:absolute; bottom:0px;">
+           <br>
+
+           **You can use arrow keys to navigate and `ESC` for an overview of the
+	   slides. A video of the slides can be found on <a
+		   href="https://www.youtube.com/watch?v=dAILldJYxyg">Youtube</a>**
+	  </div>
+          </textarea>
+        </section>
+
+	<section
           data-markdown
           data-separator="-----"
           data-separator-vertical="---"
+          data-background-color="white"
         >
           <textarea data-template>
-            # Title Page
 
-            ### Date
+           ### **Motivations: Precession in geophysics and industrial applications**
+	   
+            - Geomagnetic observations show **secular variations (SV)** with periods up to the **inter-annual** range associated to the Earth's interior 
+            - Core-flow inversions reveal that a large part of these SV are explained by surface flows satisfying the **quasi-geostrophic (QG)** constraint [(e.g. Kloss & Finlay, 2019)](index.html#/99)
+            
 
-            -----
+	   -----
+	   
+	   ### **Theory**
+
+	   ---
+	   <div class="container"> 
+ 
+	   <img  src="assets/EGU21.004.jpeg"></img>
+	   
+	   ---
+	   
+	   <img  src="assets/EGU21.005.jpeg"></img>
+	   </div>
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.006.jpeg"></img>
+	   </div>
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.007.jpeg"></img>
+	   </div>
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.008.jpeg"></img>
+	   </div>
+
+	   -----
+
+           ### **Experiment**
+	 
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.009.jpeg"></img>
+	   </div>
+	   ---	
+	   <div class="container">
+	   <img  src="assets/EGU21.010.jpeg"></img>
+	   </div>
+
+	   -----
+
+           ### **Uniform vorticty**
+	
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.011.jpeg"></img>
+	   </div>
+	   ---	
+	   <div class="container">
+	   <img  src="assets/EGU21.012.jpeg"></img>
+	   </div>
+
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.013.jpeg"></img>
+	   </div>
+
+	   -----
+	      
+	   ### **Deviation form uniform vorticty**
+	
+	   ---	
+	   <div class="container">
+	   <img  src="assets/EGU21.014.jpeg"></img>
+	   </div>
+	   ---
+	   <div class="container">
+	   <img  src="assets/EGU21.015.jpeg"></img>
+	   </div>
+	   ---	
+	   <div class="container">
+	   <img  src="assets/EGU21.016.jpeg"></img>
+	   </div>
+	   
+          </textarea>
+        </section>
+
+
+
+	<section
+          data-markdown
+          data-separator="-----"
+          data-separator-vertical="---"
+          data-background-color="white"
+        >
+          <textarea data-template>
+
+            ### **Non-diffusive QG MC modes**
             
             Vertical slides are separated by `- - -`
             
-            ---
-            
-            Vertical slides are separated by `- - -` .
-            
-            ---
-            
-            Vertical slides are separated by `- - -` ..
-     
-            -----
-            
-            # title
-            ## skills
-            * one
-            * two
-            * three
-            
-            ## heading
-            8. three
-            1. one
-            1. two
-         
-            
-            -----
-            
-
-            # Questions
-
-            -----
-
-            ## made with
-
-            #### [reveal.js](https://github.com/hakimel/reveal.js)
-
-            #### [excalidraw](https://github.com/excalidraw/excalidraw)
 
           </textarea>
         </section>
       </div>
     </div>
 
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>
-    <script src="reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="reveal.js/plugin/zoom/zoom.js"></script>
+    <script src="assets/reveal.js/dist/reveal.js"></script>
+    <script src="assets/reveal.js/plugin/notes/notes.js"></script>
+    <script src="assets/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="assets/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="assets/reveal.js/plugin/zoom/zoom.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
